@@ -1,0 +1,26 @@
+{
+  "name": "textExplorer",
+  "version": "1.0.0",
+  "description": "A text based adventure game for the command line built with Node.js",
+  "main": "index.js",
+  "bin": {
+    "textExplorer": "textAdventure.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DominicSerranoC14/Node.jsTextCLIExplorer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DominicSerranoC14/Node.jsTextCLIExplorer/issues"
+  },
+  "homepage": "https://github.com/DominicSerranoC14/Node.jsTextCLIExplorer#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
