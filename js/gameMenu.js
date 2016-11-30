@@ -1,6 +1,7 @@
 'use strict';
 
 const { argv: [,, ...args] } = process;
+process.stdin.setEncoding('utf8');
 const express = require('express');
 const app = express();
 /////////////////////////////////////////
@@ -14,13 +15,20 @@ const printGameMenu = () => {
     \n`
   );
 };
+printGameMenu();
+
 
 const exit = () => {
-  console.log("Test exit");
-  app.close();
+  console.log("Goodbye!");
+  // app.close();
+  process.exit();
 };
 
 
+process.stdin.on('data', (result) => {
 
-
-app.listen(3000, () => printGameMenu());
+  if (result = 'exit()') {
+    exit();
+  }
+  console.log("Test result", result);
+});
