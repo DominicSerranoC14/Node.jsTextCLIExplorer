@@ -11,24 +11,32 @@ const printGameMenu = () => {
   .write(
     `Welcome!\n
     Start game: startNewGame()\n
-    Exit: exit()\n
+    Quit: exit()\n
     \n`
   );
 };
 printGameMenu();
 
 
+const startNewGame = () => {
+  console.log("Starting game...");
+};
+
+
 const exit = () => {
   console.log("Goodbye!");
-  // app.close();
   process.exit();
 };
 
 
 process.stdin.on('data', (result) => {
 
-  if (result = 'exit()') {
+  if (result === 'exit()') {
     exit();
   }
-  console.log("Test result", result);
+
+  if (result === 'startNewGame()') {
+    startNewGame();
+  }
+  console.log("Test result:", result);
 });
