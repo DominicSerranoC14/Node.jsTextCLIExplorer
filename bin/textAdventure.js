@@ -3,9 +3,9 @@
 'use strict';
 
 const { printGameMenu } = require('../js/gameActions');
-const { createPrompt } = require('../js/prompt');
+const { createPrompt, setUsername } = require('../js/prompt');
 
 // Print start menu
 printGameMenu();
-// Open prompt for user input
-createPrompt();
+// Store userName
+setUsername();

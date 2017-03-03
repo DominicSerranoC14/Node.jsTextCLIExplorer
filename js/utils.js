@@ -2,6 +2,8 @@
 
 module.exports = {
 
-  createLine: () => process.stdout.write('\n')
+  createLine: () => process.stdout.write(`
+  \n  
+  `)
 
 };

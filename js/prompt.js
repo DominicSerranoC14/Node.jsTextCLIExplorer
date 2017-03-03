@@ -6,6 +6,14 @@ const { createLine } = require('./utils');
 
 module.exports = {
 
+  setUsername: () => {
+    prompt.get(['username'], function (err, { username }) {
+      gameActions.startGame(username);
+      // To keep process.stdin open
+      process.stdin.resume();
+    });
+  },
+
   createPrompt: () => {
     createLine();
     prompt.get(['$'], function (err, { $ }) {
@@ -17,7 +25,7 @@ module.exports = {
       // If command exists, execute function
       gameActions[$]();
       process.stdin.resume();
-    })
+    });
   }
 
 };
