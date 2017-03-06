@@ -7,5 +7,5 @@ const { createPrompt, setUsername } = require('../js/prompt');
 
 // Print start menu
 printGameMenu();
-// Store userName
-setUsername();
+// Create a prompt for user input
+createPrompt();
