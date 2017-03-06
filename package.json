@@ -22,6 +22,7 @@
   "homepage": "https://github.com/DominicSerranoC14/Node.jsTextCLIExplorer#readme",
   "dependencies": {
     "express": "^4.14.0",
+    "node-fetch": "^1.6.3",
     "prompt": "^1.0.0"
   }
 }
