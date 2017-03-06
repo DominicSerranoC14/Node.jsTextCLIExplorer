@@ -53,7 +53,12 @@ const setUsername = () => {
 
 const currentGuessPrompt = () => {
   prompt.get(['$'], function (err, { $ }) {
-    console.log($);
+    // If there was a match, fire guess prompt again
+    if (gameActions.evalGuess($)) {
+      currentGuessPrompt();
+    } else {
+      console.log('Incorrect guess.');
+    };
   });
 };
 

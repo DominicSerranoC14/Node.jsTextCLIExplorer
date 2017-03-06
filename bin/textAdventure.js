@@ -6,10 +6,10 @@ const { printGameMenu, gamePlay } = require('../js/gameActions');
 const { createPrompt, setUsername, currentGuessPrompt } = require('../js/prompt');
 
 // Print start menu
-printGameMenu();
+// printGameMenu();
 // Create a prompt for user input
-createPrompt();
+// createPrompt();
 
 // Testing
-// gamePlay()
-// .then(() => currentGuessPrompt());
+gamePlay()
+.then(() => currentGuessPrompt());
