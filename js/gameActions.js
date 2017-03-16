@@ -43,7 +43,7 @@ module.exports = {
       // console.log(
       // `${currentWord.map(each => (each === guess) ?` ${guess} `:' __ ').join('')}`
       // )
-      
+
       return true;
     };
   },
